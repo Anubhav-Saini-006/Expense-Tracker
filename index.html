@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="icon" href="/Expense-Tracker/icon.jpg">
+    <link rel="stylesheet" href="/Expense-Tracker/style.css">
+</head>
+<body>
+    <main>
+        <div class="menu">
+        <div>
+            <h1>Expense-Tracker</h1>
+        </div>
+        <div>
+            <button class="menu_button" id="Dashboard_button">🏡 Dashboard</button>
+        </div>
+        <div>
+            <button class="menu_button" id="add_expense_button">📄 Add Expense</button>
+        </div>
+        <div>
+            <button class="menu_button" id="expense_history_button">📚 Expense History</button>
+
+        </div>
+        <div>
+            <button class="menu_button" id="settings_button">⚙️ Settings</button>
+        </div>
+
+    </div>
+
+    <div class="page">
+        <section class="Dashboard" >
+            <div class="outer1">
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="outer2">
+                <div class="inner1">
+                    <div class="inner">
+                        <h3>Total number of transactions</h3>
+                        <p class="transaction_number">0</p>
+                    </div>
+                    
+                    <div class="inner">
+                        <h3>Total Spent</h3>
+                        <p class="total_spent">₹0</p>
+
+                    </div>
+                </div>
+
+                <div class="inner2">
+                    <h4>Categories</h4>
+                    <p class="Categories"></p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden" id="addExpense">
+            <div class="add_outer1">
+                <h2>Add a new Expense</h2>
+            </div>
+            <div class="add_outer2">
+                <form class="expense-form">
+                    <div class="field">
+                        <input type="text" id="title" required placeholder="Description">
+                    </div>
+
+                    <div class="field">
+                        <input type="number" id="amount" required placeholder="Amount">
+                    </div>
+
+                    <div class="field">
+                        <select id="category" required>
+                            <option value="" disabled selected></option>
+                            <option>Food</option>
+                            <option>Travel</option>
+                            <option>Clothes</option>
+                            <option>Rent</option>
+                            <option>Bills</option>
+                            <option>Utility</option>
+                            <option>Maintenace</option>
+                            <option>Gifts</option>
+                            <option>Charity</option>
+                            <option></option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Add Expense</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="hidden" id="history">
+            <div class="history_outer">
+                <h2>Expense History</h2>
+            </div>
+            <div class="expense_outer2">
+                <div class="expense_data">
+                    Date:{} category{} Amount{}
+                </div>
+                <div class="expense_data">
+                    Date:{} category{} Amount{}
+                </div>
+                <div class="expense_data">
+                    Date:{} category{} Amount{}
+                </div>
+            </div>
+        </section>
+
+
+        <section class="hidden" id="settings">
+            <div class="setting_outer">Settings</div>
+            <div class="setting_inner">
+                <button type="reset" id="reset_all_data">Reset all data</button>
+            </div>
+        </section>
+
+    </div>
+    </main>
+    <script src="/Expense-Tracker/script.js"></script>
+</body>
+</html>

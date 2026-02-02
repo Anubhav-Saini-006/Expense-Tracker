@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: 100vh;
+    align-items: stretch;
+}
+.menu{
+    background-color: #1e293b;
+    color: bisque;
+    font-size: clamp(0.5rem,5vw,2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1.5rem;
+    min-width: 280px;     
+    flex-shrink: 0;
+    padding: 20px 0;
+    white-space: nowrap;
+}
+.menu>div{
+    width: 100%;
+    display: flex;
+}
+.menu_button{
+    font-size: 2rem;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #1e293b;
+    border: none;
+    color: bisque;
+}
+h1{
+    margin: 2%;
+    padding: 0 35px;
+}
+.menu_button:hover{
+    background-image: linear-gradient(to right,#1a237e,#0a0e36);
+    color: rgb(253, 253, 253);
+    border: 2px solid black;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    position: relative;
+    background-color: #f8fafc;
+}
+.Dashboard{
+    display: flex;
+    flex-direction: column;
+
+}
+.outer1{
+    border: 5px solid black;
+    font-size: 3rem;
+    padding: 3%;
+    margin-bottom: 0;
+    text-align: center;
+    
+}   
+.outer2{
+    font-size: 2rem;
+    display: flex;
+    align-items: stretch;
+    background-color: #f8fafc;
+}
+.inner1{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2.5rem;;
+    padding-top: 5% ;
+    width: 100%;
+
+}
+.inner{
+    width: 100%;   
+    max-width: 320px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 5%;
+    background-color: rgb(246, 79, 79);
+    border-radius: 5%;
+    margin: 3%;
+    width: 100%;
+    overflow: hidden;
+}
+.inner2 {
+    padding: 5%;
+    background-color: #e2e8f0;
+    flex:2;
+    border-radius: 5%;
+    margin: 2%;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.inner p, h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    font-size: 3rem;
+    padding: 0%;
+    margin-top: 0%;
+}
+.hidden{
+    display: none;
+}
+
+.addExpense{
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.add_outer1{
+    width: 100%;
+    padding: 3%;
+    border: 5px solid black;
+}
+.add_outer2{
+    height: 550px;
+    margin-top:10%;
+    margin-bottom:6%;
+    width: 50%;
+    border: 2px solid black;
+    
+}
+
+.expense-form {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.field {
+    position: relative;
+}
+.field input,
+.field select {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    font-size: 2rem;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    background: transparent;
+}
+.field label {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    color: #666;
+    background: white;
+    padding: 0 0.3rem;
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label,
+.field select:focus + label,
+.field select:not([value=""]) + label {
+    top: -0.45rem;
+    font-size: 0.75rem;
+    color: #1a237e;
+}
+.submit-btn {
+    margin-top: 1rem;
+    padding: 0.9rem;
+    font-size: 1.05rem;
+    border-radius: 8px;
+    border: none;
+    background: #1a237e;
+    color: white;
+    cursor: pointer;
+}
+
+.history_outer{
+    width: 100%;
+    font-size:3rem;
+    text-align: center;
+    padding: 3%;
+    border: 5px solid black;
+}
+.expense_outer2{
+    .expense_outer2{
+    min-height: 72vh;
+    overflow-y: auto;
+    background-color: cornsilk;
+}
+
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.setting_outer{
+    width: 100%;
+    font-size:5rem;
+    text-align: center;
+    font-weight: 1000;
+    padding: 3%;
+    border: 5px solid black;
+}
+.setting_inner>button{
+    height: 10rem;
+    width: 50rem;
+    padding: 2%;
+    margin-top: 200PX;
+    font-size: 5rem;
+}
+.setting_inner{
+    height: 750px;
+}
+
+.expense_data{
+    border: 2px solid black;
+    border-radius: 2%;
+    font-size: 2rem;
+    box-shadow: 0 0 2px 2px;
+    padding: 2%;
+    background-color: rgb(124, 226, 124);
+    margin: 2%;
+}
