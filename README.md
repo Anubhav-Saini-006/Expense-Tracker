@@ -3,7 +3,7 @@
 A clean, responsive web application for managing personal finances. Track daily expenses, categorize transactions, and get instant insights into spending habits with real-time totals and persistent storage.
 
 ## 🚀 Live Demo
-> **[View Live Demo]([https://your-username.github.io/Expense-Tracker/](https://anubhav-saini-006.github.io/Expense-Tracker/))** 
+> **[View Live Demo]([https://your-username.github.io/Expense-Tracker/])** 
 
 ---
 
