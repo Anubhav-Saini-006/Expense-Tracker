@@ -209,12 +209,9 @@ h4{
     border: 5px solid black;
 }
 .expense_outer2{
-    .expense_outer2{
     min-height: 72vh;
     overflow-y: auto;
     background-color: cornsilk;
-}
-
 }
 
 .settings{
